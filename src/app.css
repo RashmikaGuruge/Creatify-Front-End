@@ -1,0 +1,12 @@
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root{
+  --blue-1 : #B1D4E0;
+  --blue-2 : #2E8BC0;
+  --blue-3 : #145DA0;
+  --blue-4 : #0C2D48;
+}

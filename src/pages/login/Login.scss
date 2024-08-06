@@ -1,0 +1,46 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    form {
+      width: 360px;
+      padding: 100px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      h1 {
+        color: gray;
+        margin-bottom: 20px;
+      }
+  
+      label {
+        color: gray;
+        font-size: 18px;
+        font-weight: 450;
+      }
+  
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid rgb(216, 214, 214);
+        margin-bottom: 15px;
+      }
+  
+      button {
+        border: none;
+        padding: 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: var(--blue-2);
+        cursor: pointer;
+      }
+  
+      span{
+        color: red;
+        font-size: 12px;
+      }
+    }
+  }

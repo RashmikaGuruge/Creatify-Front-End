@@ -1,0 +1,121 @@
+.featured {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right,white, var(--blue-1), var(--blue-2));
+    //background-color: var(--blue-1);
+    //border-bottom : 1px solid gray;
+    color: black;
+  
+    .container {
+      width: 1350px;
+      display: flex;
+      align-items: center;
+  
+      .left {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        gap: 30px;
+  
+        h1 {
+          font-size: 50px;
+  
+          span {
+            font-style: italic;
+            font-weight: 350;
+            color: var(--blue-4);
+          }
+        }
+  
+        .search {
+          background-color: white;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          overflow: hidden;
+          //border: 1px solid black;
+  
+          .searchInput {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 20px;
+              height: 20px;
+              margin: 10px;
+            }
+  
+            input {
+              border: none;
+              outline: none;
+  
+              &::placeholder {
+                color: gray;
+              }
+            }
+          }
+  
+          button {
+            width: 120px;
+            height: 50px;
+            border: none;
+            background-color: var(--blue-2);
+            color: white;
+            align-self: flex-end;
+            cursor: pointer;
+          }
+        }
+  
+        .popular {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+  
+          span {
+            width: max-content;
+          }
+  
+          button {
+            width: max-content;
+            color: black;
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: transparent;
+            font-size: 14px;
+          }
+        }
+      }
+  
+      .right {
+        height: 100%;
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+
+        .right-co{
+          height: 450px;
+          width: 450px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--blue-4);
+          border-radius: 50%;
+
+          img {
+            //margin-left: 120px;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-image: linear-gradient(to right,var(--blue-2), var(--blue-3), var(--blue-4));
+          }
+        }
+        
+      }
+    }
+  }
