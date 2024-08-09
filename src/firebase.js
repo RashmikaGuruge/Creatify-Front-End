@@ -3,12 +3,11 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from 'firebase/storage';
 
-const apiKey = process.env.FIREBASE_API_KEY;
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Access the environment variable
+const apiKey = import.meta.env.VITE_FIREBASE_API_KEY;
+console.log(apiKey);
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: apiKey,
   authDomain: "liverr-freelance.firebaseapp.com",
